@@ -1,0 +1,236 @@
+/* Reset default margin and padding for all elements */
+* {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  box-sizing: border-box; /* Include border and padding in element's total width/height */
+}
+
+/* Apply base font and background for the body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Set modern sans-serif font */
+  background-color: #f7f9fc; /* Light gray-blue background for a clean look */
+  color: #222; /* Dark text for readability */
+  line-height: 1.6; /* Comfortable line spacing */
+}
+
+/* Style for navigation bar */
+.navbar {
+  display: flex; /* Use flexbox to arrange nav items horizontally */
+  justify-content: space-between; /* Push logo to the left and links to the right */
+  align-items: center; /* Vertically center items */
+  background-color: #ffffff; /* White background for header */
+  padding: 1rem 2rem; /* Spacing around the navbar */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* Light shadow for depth */
+  position: sticky; /* Keep navbar fixed at the top */
+  top: 0; /* Stick to top of the page */
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+/* Logo styling */
+.logo {
+  font-size: 1.5rem; /* Increase logo font size */
+  font-weight: bold; /* Make logo text bold */
+  color: #0b5394; /* Dark blue color for brand identity */
+}
+
+/* Navigation links list */
+.nav-links {
+  list-style: none; /* Remove default list styling */
+  display: flex; /* Display links in a row */
+  gap: 1.5rem; /* Space between links */
+}
+
+/* Individual link items */
+.nav-links li a {
+  text-decoration: none; /* Remove underline from links */
+  color: #333; /* Dark gray for default link color */
+  font-weight: 500; /* Medium weight for visibility */
+  transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Hover effect on navigation links */
+.nav-links li a:hover {
+  color: #0b5394; /* Change to brand blue on hover */
+}
+
+/* Hamburger menu toggle (hidden on desktop) */
+.menu-toggle {
+  display: none; /* Hide by default */
+  font-size: 1.8rem; /* Large size for visibility */
+  cursor: pointer; /* Show pointer cursor */
+}
+
+/* Hero section container */
+.hero {
+  background: linear-gradient(to right, #0b5394, #1c86c6); /* Blue gradient background */
+  color: #fff; /* White text for contrast */
+  text-align: center; /* Center-align content */
+  padding: 4rem 2rem; /* Vertical and horizontal padding */
+}
+
+/* Hero title */
+.hero h1 {
+  font-size: 2.5rem; /* Large font size for main heading */
+  margin-bottom: 1rem; /* Space below title */
+}
+
+/* Hero description */
+.hero p {
+  font-size: 1.2rem; /* Slightly larger than base text */
+  margin-bottom: 2rem; /* Space below paragraph */
+}
+
+/* Container for hero buttons */
+.hero-buttons {
+  display: flex; /* Arrange buttons in a row */
+  justify-content: center; /* Center horizontally */
+  gap: 1rem; /* Space between buttons */
+  flex-wrap: wrap; /* Wrap buttons on smaller screens */
+}
+
+/* Button base style */
+.btn {
+  padding: 0.75rem 1.5rem; /* Padding inside button */
+  border-radius: 30px; /* Fully rounded button shape */
+  text-decoration: none; /* Remove link underline */
+  font-weight: bold; /* Bold text */
+  transition: background 0.3s ease; /* Smooth hover transitions */
+}
+
+/* Primary button (filled style) */
+.btn.primary {
+  background-color: #ffffff; /* White background */
+  color: #0b5394; /* Brand color text */
+  border: 2px solid transparent; /* No visible border */
+}
+
+/* Hover effect for primary button */
+.btn.primary:hover {
+  background-color: #f1f1f1; /* Light gray on hover */
+}
+
+/* Secondary button (outline style) */
+.btn.secondary {
+  background-color: transparent; /* Transparent background */
+  color: #ffffff; /* White text */
+  border: 2px solid #ffffff; /* White border */
+}
+
+/* Hover effect for secondary button */
+.btn.secondary:hover {
+  background-color: #ffffff; /* Fill with white on hover */
+  color: #0b5394; /* Brand color on hover */
+}
+
+/* About section container */
+.about {
+  padding: 3rem 2rem; /* Padding for spacing */
+  max-width: 800px; /* Limit content width */
+  margin: auto; /* Center section horizontally */
+  text-align: center; /* Center text */
+}
+
+/* About section heading */
+.about h2 {
+  font-size: 2rem; /* Large heading */
+  margin-bottom: 1rem; /* Space below heading */
+}
+
+/* About section paragraph */
+.about p {
+  font-size: 1.1rem; /* Slightly larger text */
+  color: #444; /* Darker gray text */
+}
+
+/* Featured course section */
+.featured-course {
+  background-color: #e9f1fa; /* Light blue background */
+  padding: 3rem 2rem; /* Section padding */
+  text-align: center; /* Center-align content */
+}
+
+/* Featured course heading */
+.featured-course h2 {
+  font-size: 2rem; /* Heading size */
+  margin-bottom: 1rem; /* Space below heading */
+}
+
+/* Featured course card */
+.course-card {
+  background-color: #fff; /* White card background */
+  padding: 2rem; /* Inner spacing */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  max-width: 600px; /* Limit width */
+  margin: auto; /* Center card */
+}
+
+/* Course card title */
+.course-card h3 {
+  margin-bottom: 1rem; /* Space below title */
+}
+
+/* CTA section background */
+.cta {
+  padding: 3rem 2rem; /* Section spacing */
+  background-color: #0b5394; /* Brand blue background */
+  color: white; /* White text for contrast */
+  text-align: center; /* Center text */
+}
+
+/* CTA heading */
+.cta h2 {
+  font-size: 2rem; /* Large font */
+  margin-bottom: 1rem; /* Space below heading */
+}
+
+/* CTA subtext */
+.cta p {
+  margin-bottom: 1.5rem; /* Space below paragraph */
+}
+
+/* Footer section styling */
+footer {
+  background-color: #1a1a1a; /* Dark footer background */
+  color: #ccc; /* Light gray text */
+  text-align: center; /* Center-align text */
+  padding: 2rem 1rem; /* Inner spacing */
+}
+
+/* Footer link list */
+footer ul {
+  list-style: none; /* Remove bullets */
+  display: flex; /* Arrange links in a row */
+  justify-content: center; /* Center horizontally */
+  gap: 1.5rem; /* Space between links */
+  margin-top: 1rem; /* Space above links */
+}
+
+/* Footer links */
+footer ul li a {
+  color: #ccc; /* Light gray links */
+  text-decoration: none; /* No underline */
+  font-size: 0.9rem; /* Smaller text */
+}
+
+/* Responsive adjustments for screens under 768px */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide links on small screens */
+    flex-direction: column; /* Stack links vertically */
+    background-color: #fff; /* White background */
+    position: absolute; /* Position absolutely */
+    top: 70px; /* Position below navbar */
+    right: 20px; /* Align to the right */
+    padding: 1rem; /* Padding inside menu */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Shadow for dropdown */
+  }
+
+  .nav-links.show {
+    display: flex; /* Show when class 'show' is added */
+  }
+
+  .menu-toggle {
+    display: block; /* Show hamburger menu on small screens */
+  }
+}

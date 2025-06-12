@@ -1,0 +1,110 @@
+/* Reset margins and paddings globally */
+* {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  box-sizing: border-box; /* Include border in width/height */
+}
+
+/* Set body font and background */
+body {
+  font-family: 'Segoe UI', sans-serif; /* Use clean modern font */
+  background-color: #f4f7fb; /* Light gray-blue background */
+  color: #333; /* Default text color */
+}
+
+/* Style the navigation bar */
+.navbar {
+  display: flex; /* Arrange children horizontally */
+  justify-content: space-between; /* Space between logo and links */
+  align-items: center; /* Vertically center content */
+  background-color: #fff; /* White navbar */
+  padding: 1rem 2rem; /* Spacing inside navbar */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Subtle shadow */
+}
+
+/* Logo text style */
+.logo {
+  font-weight: bold; /* Bold text */
+  font-size: 1.5rem; /* Large font */
+  color: #0b5394; /* Blue brand color */
+}
+
+/* Navigation links style */
+.nav-links {
+  list-style: none; /* Remove list bullets */
+  display: flex; /* Display links inline */
+  gap: 1rem; /* Space between links */
+}
+
+/* Navigation link anchor style */
+.nav-links li a {
+  text-decoration: none; /* Remove underline */
+  color: #333; /* Dark gray text */
+  font-weight: 500; /* Medium font weight */
+}
+
+/* Main wrapper for course content */
+.courses-wrapper {
+  max-width: 1100px; /* Limit content width */
+  margin: 2rem auto; /* Center horizontally with spacing */
+  padding: 1rem; /* Inner spacing */
+}
+
+/* Page title style */
+.courses-wrapper h1 {
+  text-align: center; /* Center title */
+  margin-bottom: 2rem; /* Space below title */
+  color: #0b5394; /* Blue title */
+}
+
+/* Container for search and filters */
+.filter-bar {
+  display: flex; /* Arrange filters horizontally */
+  gap: 1rem; /* Space between inputs */
+  margin-bottom: 2rem; /* Space below filter bar */
+  justify-content: center; /* Center filters */
+  flex-wrap: wrap; /* Allow wrap on small screens */
+}
+
+/* Search input style */
+.filter-bar input, .filter-bar select {
+  padding: 0.7rem 1rem; /* Input padding */
+  font-size: 1rem; /* Font size */
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 8px; /* Rounded input corners */
+  width: 250px; /* Fixed width */
+}
+
+/* Grid layout for course cards */
+.course-list {
+  display: grid; /* Use CSS grid */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 1.5rem; /* Space between cards */
+}
+
+/* Individual course card */
+.course-card {
+  background-color: #fff; /* White card */
+  padding: 1rem; /* Inner padding */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06); /* Light shadow */
+  transition: transform 0.2s ease; /* Smooth hover effect */
+}
+
+/* Hover effect on cards */
+.course-card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+/* Course title */
+.course-title {
+  font-size: 1.2rem; /* Larger font */
+  color: #0b5394; /* Brand blue */
+  margin-bottom: 0.5rem; /* Space below title */
+}
+
+/* Course description */
+.course-desc {
+  font-size: 0.95rem; /* Slightly smaller text */
+  color: #555; /* Grayish text */
+}

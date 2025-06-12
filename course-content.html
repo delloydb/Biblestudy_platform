@@ -1,0 +1,84 @@
+<!-- Declare the HTML document type -->
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head section begins -->
+<head>
+  <!-- Character encoding for the page -->
+  <meta charset="UTF-8">
+  <!-- Set viewport for mobile responsiveness -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Page title shown in browser tab -->
+  <title>Bible Study - Lesson View</title>
+  <!-- Link to external CSS file for styling -->
+  <link rel="stylesheet" href="course-content.css">
+</head>
+
+<!-- Body section begins -->
+<body>
+
+  <!-- Main content container -->
+  <div class="course-container">
+
+    <!-- Section: Header bar with course title -->
+    <header class="course-header">
+      <!-- Display current course title -->
+      <h1>Bible Fundamentals: Lesson 1 - Creation</h1>
+    </header>
+
+    <!-- Section: Video or embedded lesson content -->
+    <div class="lesson-video">
+      <!-- Embedded YouTube video (or replace with local video player) -->
+      <iframe 
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+        frameborder="0" 
+        allowfullscreen 
+        title="Lesson Video">
+      </iframe>
+    </div>
+
+    <!-- Section: Reading material -->
+    <section class="lesson-text">
+      <!-- Subheading for reading content -->
+      <h2>Lesson Summary</h2>
+      <!-- Lesson content or text summary -->
+      <p>
+        This lesson explores the biblical account of creation in Genesis. We reflect on God’s power, purpose, and love in designing the world, and how this informs our understanding of His nature.
+      </p>
+    </section>
+
+    <!-- Section: Downloadable notes -->
+    <section class="downloads">
+      <!-- Subheading for downloads -->
+      <h3>Download Materials</h3>
+      <!-- Downloadable PDF link -->
+      <a href="assets/lesson1-notes.pdf" download>Download Lesson Notes (PDF)</a>
+    </section>
+
+    <!-- Section: Progress tracking bar -->
+    <section class="progress">
+      <!-- Subheading for progress -->
+      <h3>Lesson Progress</h3>
+      <!-- Container for progress bar -->
+      <div class="progress-bar">
+        <!-- Filled portion of the bar -->
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+    </section>
+
+    <!-- Section: Navigation to other lessons -->
+    <nav class="lesson-navigation">
+      <!-- Previous lesson button -->
+      <button class="nav-btn" onclick="goToPreviousLesson()">← Previous Lesson</button>
+      <!-- Next lesson button -->
+      <button class="nav-btn" onclick="goToNextLesson()">Next Lesson →</button>
+    </nav>
+
+  </div>
+
+  <!-- Link to external JavaScript file for interactions -->
+  <script src="course-content.js"></script>
+</body>
+</html>
+<!-- End of the HTML document -->
+<!-- This HTML document serves as a template for displaying a lesson in a Bible study course, including video content, reading material, downloadable notes, and navigation controls. -->

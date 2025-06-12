@@ -1,0 +1,79 @@
+/* Reset default spacing and box model */
+* {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  box-sizing: border-box; /* Include padding in width */
+}
+
+/* Base body style */
+body {
+  font-family: 'Segoe UI', sans-serif; /* Modern clean font */
+  background-color: #f9fafb; /* Light neutral background */
+  padding: 2rem; /* Space around content */
+}
+
+/* Main quiz container styling */
+.quiz-container {
+  max-width: 700px; /* Limit container width */
+  margin: auto; /* Center the container */
+  background: #ffffff; /* White background */
+  padding: 2rem; /* Padding inside the container */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05); /* Soft shadow */
+}
+
+/* Heading style */
+.quiz-container h1 {
+  font-size: 1.8rem; /* Large font */
+  margin-bottom: 1.5rem; /* Space below heading */
+  color: #1a1a1a; /* Dark text color */
+}
+
+/* Each question block styling */
+.question-block {
+  margin-bottom: 1.5rem; /* Space between questions */
+}
+
+/* Question text */
+.question-block p {
+  font-size: 1.1rem; /* Slightly larger text */
+  margin-bottom: 0.5rem; /* Space below question */
+}
+
+/* Style for each label */
+.question-block label {
+  display: block; /* Display options vertically */
+  margin-bottom: 0.3rem; /* Space between options */
+  font-size: 1rem; /* Normal text size */
+  cursor: pointer; /* Pointer cursor */
+}
+
+/* Button style */
+button {
+  padding: 0.75rem 1.5rem; /* Button size */
+  background-color: #2563eb; /* Primary blue color */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 6px; /* Rounded edges */
+  cursor: pointer; /* Pointer on hover */
+  margin-top: 1rem; /* Space above button */
+}
+
+/* Hover effect on button */
+button:hover {
+  background-color: #1e40af; /* Darker blue */
+}
+
+/* Result message style */
+#result {
+  margin-top: 2rem; /* Space above result */
+  font-size: 1.2rem; /* Larger result text */
+  font-weight: bold; /* Emphasize result */
+  color: #065f46; /* Green color for positive feedback */
+}
+/* Error message style */
+#error {
+  color: #b91c1c; /* Red color for errors */
+  font-size: 1rem; /* Normal text size */
+  margin-top: 1rem; /* Space above error message */
+}

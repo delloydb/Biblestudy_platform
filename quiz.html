@@ -1,0 +1,71 @@
+<!-- Declare document type as HTML -->
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head section begins -->
+<head>
+  <!-- Character encoding -->
+  <meta charset="UTF-8">
+  <!-- Responsive view settings -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Page title shown on browser tab -->
+  <title>Bible Study Quiz</title>
+  <!-- Link to external CSS for styling -->
+  <link rel="stylesheet" href="quiz.css">
+</head>
+
+<!-- Body section starts -->
+<body>
+
+  <!-- Container for the quiz content -->
+  <div class="quiz-container">
+
+    <!-- Heading for quiz section -->
+    <h1>Lesson 1 Quiz: Creation</h1>
+
+    <!-- Form containing quiz questions -->
+    <form id="quizForm">
+
+      <!-- Question 1 container -->
+      <div class="question-block">
+        <!-- Question text -->
+        <p>1. On which day did God create light?</p>
+        <!-- Options for question 1 -->
+        <label><input type="radio" name="q1" value="a"> First day</label>
+        <label><input type="radio" name="q1" value="b"> Third day</label>
+        <label><input type="radio" name="q1" value="c"> Fifth day</label>
+      </div>
+
+      <!-- Question 2 container -->
+      <div class="question-block">
+        <!-- Question text -->
+        <p>2. What did God create on the sixth day?</p>
+        <!-- Options for question 2 -->
+        <label><input type="radio" name="q2" value="a"> Birds and fish</label>
+        <label><input type="radio" name="q2" value="b"> Land animals and humans</label>
+        <label><input type="radio" name="q2" value="c"> The heavens</label>
+      </div>
+
+      <!-- Question 3 container -->
+      <div class="question-block">
+        <!-- Question text -->
+        <p>3. What was God's response to His creation at the end of each day?</p>
+        <!-- Options for question 3 -->
+        <label><input type="radio" name="q3" value="a"> He saw it was good</label>
+        <label><input type="radio" name="q3" value="b"> He changed it</label>
+        <label><input type="radio" name="q3" value="c"> He rested</label>
+      </div>
+
+      <!-- Submit button for the quiz -->
+      <button type="submit">Submit Answers</button>
+    </form>
+
+    <!-- Section to display results after submission -->
+    <div id="result"></div>
+
+  </div>
+
+  <!-- Link to external JavaScript file -->
+  <script src="quiz.js"></script>
+</body>
+</html>

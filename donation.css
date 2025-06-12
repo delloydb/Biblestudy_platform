@@ -1,0 +1,118 @@
+/* Reset default styles for consistency */
+* {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  box-sizing: border-box; /* Use border-box layout model */
+}
+
+/* Set body background and font styles */
+body {
+  font-family: 'Segoe UI', sans-serif; /* Clean and readable font */
+  background-color: #f5f7fb; /* Soft background color */
+  display: flex; /* Center container horizontally */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  min-height: 100vh; /* Full height of viewport */
+}
+
+/* Container holding all donation content */
+.donation-container {
+  background-color: white; /* White card background */
+  padding: 2rem; /* Spacing around content */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+  max-width: 500px; /* Maximum width for readability */
+  width: 100%; /* Full width of container */
+}
+
+/* Header section with title and subtext */
+header {
+  text-align: center; /* Center-align text */
+  margin-bottom: 1.5rem; /* Space below header */
+}
+
+/* Main heading style */
+header h1 {
+  font-size: 1.75rem; /* Large heading */
+  margin-bottom: 0.5rem; /* Space below heading */
+}
+
+/* Subheading text */
+header p {
+  color: #666; /* Muted color */
+  font-size: 1rem; /* Medium text */
+}
+
+/* Style for the form element */
+.donation-form {
+  display: flex; /* Use vertical layout */
+  flex-direction: column; /* Stack fields vertically */
+}
+
+/* Label styling */
+.donation-form label {
+  margin-top: 1rem; /* Space above labels */
+  font-weight: 500; /* Emphasize labels */
+}
+
+/* Input field styling */
+.donation-form input {
+  padding: 0.75rem; /* Space inside input */
+  margin-top: 0.25rem; /* Space above input */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 6px; /* Rounded edges */
+  font-size: 1rem; /* Readable font */
+}
+
+/* Section for preset amount buttons */
+.preset-options {
+  margin-top: 1rem; /* Space above options */
+}
+
+/* Preset button base styles */
+.preset-btn {
+  padding: 0.5rem 1rem; /* Size of button */
+  margin-right: 0.5rem; /* Space between buttons */
+  background-color: #e5eaf2; /* Light background */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded edges */
+  cursor: pointer; /* Show pointer cursor */
+}
+
+/* Highlight selected preset on hover */
+.preset-btn:hover {
+  background-color: #c3d2e8; /* Darker background */
+}
+
+/* Submit button styling */
+.donate-btn {
+  margin-top: 1.5rem; /* Space above button */
+  padding: 0.75rem; /* Padding inside button */
+  background-color: #1e3a8a; /* Primary color */
+  color: white; /* Light text */
+  border: none; /* No border */
+  border-radius: 6px; /* Rounded corners */
+  font-size: 1rem; /* Font size */
+  cursor: pointer; /* Pointer on hover */
+  transition: background 0.3s ease; /* Smooth transition */
+}
+
+/* Submit button hover effect */
+.donate-btn:hover {
+  background-color: #163075; /* Darker blue */
+}
+
+/* Confirmation message style */
+.confirmation {
+  margin-top: 2rem; /* Space above message */
+  text-align: center; /* Center text */
+  color: green; /* Success message color */
+  font-weight: bold; /* Emphasized text */
+}
+/* Style for error messages */
+.error {
+  color: red; /* Red text for errors */
+  margin-top: 1rem; /* Space above error message */
+  text-align: center; /* Center error text */
+  font-weight: bold; /* Emphasized error text */
+}

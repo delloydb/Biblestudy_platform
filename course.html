@@ -1,0 +1,58 @@
+<!-- Declare HTML5 doctype -->
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head of the HTML document -->
+<head>
+  <!-- Set character encoding -->
+  <meta charset="UTF-8" />
+  <!-- Set mobile viewport scaling -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Set the page title -->
+  <title>All Courses - Bible Study Platform</title>
+  <!-- Link to the external stylesheet for styling -->
+  <link rel="stylesheet" href="course.css" />
+</head>
+
+<!-- Body of the HTML document -->
+<body>
+  <!-- Navigation bar for site-wide navigation -->
+  <nav class="navbar">
+    <!-- Website logo -->
+    <div class="logo">Bible Study</div>
+    <!-- List of navigation links -->
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li> <!-- Link to homepage -->
+      <li><a href="login.html">Login</a></li> <!-- Link to login page -->
+    </ul>
+  </nav>
+
+  <!-- Main wrapper for the course content -->
+  <main class="courses-wrapper">
+    <!-- Page title -->
+    <h1>Explore Bible Study Courses</h1>
+
+    <!-- Search and filter area -->
+    <div class="filter-bar">
+      <!-- Input for searching courses -->
+      <input type="text" id="searchInput" placeholder="Search courses..." />
+      <!-- Dropdown filter by level/category -->
+      <select id="categoryFilter">
+        <option value="all">All Categories</option> <!-- Default option -->
+        <option value="beginner">Beginner</option> <!-- Beginner level filter -->
+        <option value="intermediate">Intermediate</option> <!-- Intermediate level -->
+        <option value="advanced">Advanced</option> <!-- Advanced level -->
+      </select>
+    </div>
+
+    <!-- Container for course cards -->
+    <section id="courseList" class="course-list">
+      <!-- Placeholder course card -->
+      <!-- Course data will be dynamically loaded via JavaScript -->
+    </section>
+  </main>
+
+  <!-- Link to external JavaScript file for functionality -->
+  <script src="course.js"></script>
+</body>
+</html>

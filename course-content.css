@@ -1,0 +1,141 @@
+/* Reset default styles for consistent rendering */
+* {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  box-sizing: border-box; /* Use border-box for sizing */
+}
+
+/* Base body styles */
+body {
+  font-family: 'Segoe UI', sans-serif; /* Clean modern font */
+  background-color: #f2f4f8; /* Light background color */
+  padding: 2rem; /* Add space around content */
+}
+
+/* Main container for the course page */
+.course-container {
+  max-width: 900px; /* Maximum content width */
+  margin: auto; /* Center the container */
+  background-color: white; /* White background */
+  padding: 2rem; /* Space inside the container */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Header styling for course title */
+.course-header h1 {
+  font-size: 1.75rem; /* Large heading */
+  margin-bottom: 1rem; /* Space below heading */
+  color: #1a1a1a; /* Dark text */
+}
+
+/* Styling for embedded video container */
+.lesson-video iframe {
+  width: 100%; /* Full width */
+  height: 400px; /* Fixed height */
+  border-radius: 8px; /* Rounded video edges */
+  margin-bottom: 1.5rem; /* Space below video */
+}
+
+/* Section for lesson reading content */
+.lesson-text {
+  margin-bottom: 2rem; /* Space below text */
+}
+
+/* Subheading for text section */
+.lesson-text h2 {
+  font-size: 1.5rem; /* Medium-large heading */
+  margin-bottom: 0.5rem; /* Space below heading */
+  color: #2a2a2a; /* Slightly muted black */
+}
+
+/* Lesson summary paragraph */
+.lesson-text p {
+  font-size: 1rem; /* Normal text */
+  line-height: 1.6; /* Comfortable line spacing */
+  color: #444; /* Muted grey */
+}
+
+/* Downloads section styling */
+.downloads h3 {
+  margin-bottom: 0.5rem; /* Space below heading */
+}
+
+/* Download link style */
+.downloads a {
+  display: inline-block; /* Ensure block spacing */
+  background-color: #1e3a8a; /* Primary color */
+  color: white; /* Light text */
+  padding: 0.5rem 1rem; /* Padding inside button */
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Rounded corners */
+  margin-top: 0.5rem; /* Space above link */
+}
+
+/* Progress bar section */
+.progress {
+  margin-top: 2rem; /* Space above progress */
+  margin-bottom: 2rem; /* Space below progress */
+}
+
+/* Container for visual progress */
+.progress-bar {
+  background-color: #ddd; /* Light grey background */
+  border-radius: 8px; /* Rounded bar */
+  height: 20px; /* Bar height */
+  overflow: hidden; /* Prevent overflow */
+}
+
+/* Filled portion of the progress bar */
+.progress-fill {
+  height: 100%; /* Fill entire height */
+  width: 0%; /* Default width */
+  background-color: #22c55e; /* Green progress */
+  transition: width 0.4s ease; /* Animate change */
+}
+
+/* Navigation buttons styling */
+.lesson-navigation {
+  display: flex; /* Align buttons side by side */
+  justify-content: space-between; /* Space between them */
+  margin-top: 2rem; /* Space above navigation */
+}
+
+/* Individual button styles */
+.nav-btn {
+  background-color: #1e3a8a; /* Primary color */
+  color: white; /* Light text */
+  border: none; /* Remove border */
+  padding: 0.75rem 1.25rem; /* Button size */
+  border-radius: 6px; /* Rounded edges */
+  cursor: pointer; /* Pointer on hover */
+}
+
+/* Hover effect for navigation buttons */
+.nav-btn:hover {
+  background-color: #163075; /* Darker shade */
+}
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .course-container {
+    padding: 1rem; /* Less padding on small screens */
+  }
+
+  .lesson-video iframe {
+    height: 250px; /* Smaller video height */
+  }
+
+  .lesson-navigation {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 0.5rem; /* Space between buttons */
+  }
+}
+/* Confirmation message style */
+.confirmation {
+  margin-top: 2rem; /* Space above message */
+  padding: 1rem; /* Inner padding */
+  background-color: #e0f7fa; /* Light blue background */
+  border-radius: 6px; /* Rounded corners */
+  color: #00796b; /* Teal text */
+  font-size: 1.1rem; /* Slightly larger text */
+}
